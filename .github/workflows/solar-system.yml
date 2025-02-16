@@ -26,6 +26,7 @@ jobs:
             node-version: 20
 
         - name: Cache NPM dependencies
+          id: npm-cache
           uses: actions/cache@v4
           with:
             path: ~/.npm
